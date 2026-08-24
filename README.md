@@ -1,4 +1,4 @@
-Here is the updated `README.md` strictly aligned with your actual directory structure shown in the screenshot (removing Flux completely and anchoring to **Ollama**, **RADCAM**, and **RADGRAM**).
+![Rossini a modern GENAI fr Videos, Audio, Music and Images Server])(assets/rossni.png)
 
 ---
 
