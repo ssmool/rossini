@@ -1,8 +1,5 @@
-![Rossini a modern GENAI fr Videos, Audio, Music and Images Server])('assets/rossini.png')
+![Rossini - a modern GENAI for Videos, Audio, Music and Images Server](assets/rossini.png)
 
----
-
-```markdown
 # Rossini GenAI — Multimodal AI Framework
 
 > **Next-Generation Audio-Visual AI Orchestrator Powered by RADCAM, RADGRAM & Local LLMs**
