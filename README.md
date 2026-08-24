@@ -1,4 +1,4 @@
-![Rossini a modern GENAI fr Videos, Audio, Music and Images Server])(assets/rossni.png)
+![Rossini a modern GENAI fr Videos, Audio, Music and Images Server])('assets/rossini.png')
 
 ---
 
