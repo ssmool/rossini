@@ -1,0 +1,41 @@
+# --- Dependências via Repositório Git (RADCAM & RADGRAM) ---
+git+https://github.com/ssmool/radcam.git
+git+https://github.com/ssmool/radgram.git
+# --- Grand Theatre Image Engine ---
+git+https://github.com/ssmool/GrandTheatre.git
+
+# --- Core Deep Learning & Computer Vision ---
+torch>=2.1.0
+torchaudio>=2.1.0
+torchvision>=0.16.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.11.0
+pillow>=10.0.0
+
+# --- Visão Computacional & Redes Neurais ---
+rembg>=2.0.50
+ultralytics>=8.0.0          # YOLOv8 engine
+onnxruntime-gpu>=1.16.0     # GPU acceleration
+
+# --- LLM Orchestration & API Schemas ---
+requests>=2.31.0
+pydantic>=2.5.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# --- Processamento de Áudio ---
+soundfile>=0.12.1
+librosa>=0.10.1
+pydub>=0.25.1
+
+# --- Vector Database & RAG Subsystem ---
+faiss-gpu>=1.7.4
+chromadb>=0.4.15
+sentence-transformers>=2.2.2
+
+# --- Utilitários de Mídia & Sistema ---
+pyvirtualcam>=0.10.0
+tqdm>=4.66.0
+pyyaml>=6.0.1
+python-multipart>=0.0.6

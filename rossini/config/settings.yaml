@@ -1,0 +1,18 @@
+# Rossini GenAI Configuration Settings
+
+ollama:
+  url: "http://localhost:11434"
+  default_model: "llama3:latest"
+  temperature: 0.2
+
+pipeline:
+  target_resolution: [1920, 1080]
+  target_fps: 30.0
+  output_dir: "outputs"
+  cache_dir: "assets/cache"
+
+dit_engine:
+  model_id: "THUDM/CogVideoX-5b"
+  device: "cuda"
+  enable_vae_slicing: true
+  enable_model_cpu_offload: true
