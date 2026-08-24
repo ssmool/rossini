@@ -1,5 +1,5 @@
+![Rossini GenAI Banner](assets/rossini.png)
 
-```markdown
 # Rossini GenAI — Multimodal AI Framework
 
 > **Next-Generation Audio-Visual AI Orchestrator Powered by DiT, RADCAM, RADGRAM, Grand Theatre & Local LLMs**
@@ -41,8 +41,6 @@ rossini/
 ├── README.md           # Documentation & user manual
 ├── requirements.txt    # Python dependencies list
 └── setup.py            # Editable package installation script (`pip install -e .`)
-
-```
 
 ---
 
