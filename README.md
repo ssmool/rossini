@@ -159,15 +159,12 @@ def run_scraping_robot():
     driver = webdriver.Chrome(options=options)
 
     try:
-        # Exemplo: Acessando tendências globais ou de criatividade
         driver.get("[https://news.ycombinator.com/](https://news.ycombinator.com/)")
         time.sleep(2)
         
-        # Extraindo a manchete principal
         first_title = driver.find_element(By.CSS_SELECTOR, ".titleline > a").text
         print(f"[*] Scraped Trending Topic: '{first_title}'")
         
-        # 1. Gerando uma imagem temática baseada na notícia
         poster_path = "outputs/scraped_trend_poster.png"
         RossiniImageEngine.generate_image(
             prompt=f"A modern tech poster representing: {first_title}",
@@ -177,7 +174,6 @@ def run_scraping_robot():
             export_format="png"
         )
 
-        # 2. Gerando uma trilha sonora instrumental via RADGRAM
         audio_path = "outputs/scraped_soundtrack.wav"
         RossiniAudioEngine.generate_music(
             prompt=f"Ambient electronic music inspired by {first_title}",
@@ -206,27 +202,23 @@ from rossini.core.pipeline import RossiniPipeline
 from rossini.core.audio_engine import RossiniAudioEngine
 from rossini.core.memory import MemoryManager
 
-# 1. Gerar música via RADGRAM diretamente pelo Python
 audio_output = RossiniAudioEngine.generate_music(
     prompt="Cinematic dark ambient orchestral track for sci-fi film",
     output_path="outputs/soundtrack.wav",
     bpm=90
 )
 
-# 2. Inicializar Pipeline de Vídeo com local Ollama
 pipeline = RossiniPipeline(
     model_name="llama3:latest",
     ollama_url="http://localhost:11434"
 )
 
-# 3. Executar pipeline combinando prompt e trilha gerada
 pipeline.run(
     input_video_path="raw_speaker.mp4",
     user_prompt="Vertical TikTok video with cyberpunk aesthetic and custom soundtrack",
     output_path="outputs/final_short.mp4"
 )
 
-# Liberar VRAM após geração
 MemoryManager.unload_ollama_model(model_name="llama3:latest")
 
 ```
